@@ -1,0 +1,107 @@
+body{
+  background-color: #F15A29;
+    background-repeat: no-repeat;
+    background-image: url('bg.jpg');
+    background-size:cover;
+}
+div{
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin: 4px 0;
+}
+#menu{
+  display: flex;
+  opacity: 0.9;
+} 
+#menu div{
+  margin: 10px 20px 10px 20px;
+  padding: 0px 5px 0px 5px
+}
+#menu>div{
+  background-color: gray;
+}
+img Drink{
+  float: left;
+  margin-left: 10px;
+  width: 150px;
+  height: 150px;
+ 
+}
+img fast food{
+  float: right;
+  margin-right: 10px;
+}
+#fast food{
+  background-color: yellow;
+}
+#fast food p{
+  margin: 2%;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+#fast food{
+  display: flex;
+  opacity: 0.7;
+}
+#fast food >div{
+  margin: 10px 50px 10px 50px 10px;
+  padding: 0px 5px 0px 5px 0px
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+nav ul li{
+  list-style: none;
+  display: inline;
+  padding-right: 2px;
+}
+.style{
+  box-sizing: border-box;
+
+}
+.row{
+  float: left;
+  width: 200%;
+  padding: 1000px;
+  height: 300px;
+}
+.row after{
+  display: flex;
+  float: right;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+image{
+  width:100px;
+    border-radius:25px;
+    float:left;
+    margin-right:10px;
+
+}
+footer{ margin:5;
+  margin-top: 5;
+  text-align: center;
+  font-family: shadow into light;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
