@@ -1,107 +1,335 @@
 body{
-  background-color: #F15A29;
-    background-repeat: no-repeat;
-    background-image: url('bg.jpg');
-    background-size:cover;
+  /* background-color: #F15A29; */
+  max-width: 1200px;
+  max-height: 50%;
+  margin: 0 auto;
+  font-size: 14px ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
-div{
-  width: 30px;
-  height: 2px;
-  background-color: white;
-  margin: 4px 0;
+ .maindiv{
+  max-width: 100%;
+  border-radius: 2px;
+  color: black;
+  background-image: url(images/landing.jpg);
 }
-#menu{
-  display: flex;
-  opacity: 0.9;
-} 
-#menu div{
-  margin: 10px 20px 10px 20px;
-  padding: 0px 5px 0px 5px
+.nav icon{
+  margin: 20px;
 }
-#menu>div{
-  background-color: gray;
-}
-img Drink{
-  float: left;
-  margin-left: 10px;
-  width: 150px;
-  height: 150px;
- 
-}
-img fast food{
-  float: right;
-  margin-right: 10px;
-}
-#fast food{
-  background-color: yellow;
-}
-#fast food p{
-  margin: 2%;
-}
-nav{
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-#fast food{
-  display: flex;
-  opacity: 0.7;
-}
-#fast food >div{
-  margin: 10px 50px 10px 50px 10px;
-  padding: 0px 5px 0px 5px 0px
-}
-ul{
-  display: flex;
-  justify-content: space-between;
-
-}
-nav ul li{
-  list-style: none;
-  display: inline;
-  padding-right: 2px;
-}
-.style{
-  box-sizing: border-box;
-
-}
-.row{
-  float: left;
-  width: 200%;
-  padding: 1000px;
-  height: 300px;
-}
-.row after{
-  display: flex;
-  float: right;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
+.nav icon{
   width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+  height: 5px;
+  background-color: #fff;
+  margin: 2px 0;
 }
-image{
-  width:100px;
-    border-radius:25px;
-    float:left;
-    margin-right:10px;
+#logo{
+  background-image: url('image/logoBig.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-family: sans-serif
+}
+#service{
+display: flex;
+flex-direction: row;
+height: 170px;  
+color: white;
+font-style: italic;  
+}
+#timetable{
+  margin: 0px;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    font-style: normal;
+}
+.timetable1{ color: lightgray;
+color: black;
+}
+.timetable2 {
+background-color: #F15A29;
+}
+#fastfood{
+  display: flex;
+  background-color: whitesmoke;
+}
+#fastfood image{
+  width: 50%;
+  border: 10px solid snow;
+  padding: 40px;
+  padding-right: 20px;
+  
+} 
+#image{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid whitesmoke;
+  box-shadow: 0px 0px 6px grey;
+}
+#fast food text{
+  width: 50%;
+  padding: 50px;
+  margin-left: 10px;
+  font-size: 14px;  
+}
+#drinks{
+  display: flex;
+  /* background-color: whitesmoke; */
+}
+
+.firstdrinks img{
+  display: flex;
+  
+}
+
+#drinks2 image{
+  width: 100%;
+  /* border: 2px solid #E5E8E8;
+  box-sizing: border-box; */
+  float: right;
+  padding: 20px;
+  padding-right: 50px;   
+}  
+#img{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 10px solid whitesmoke;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px grey;
+  overflow: hidden;
+}
+#drink2 text{
+  float: right;
+  width: 50%;
+  padding: 20px;
+  padding-right: 50px;
+  margin-left: 10px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 14px; 
+} 
+#timetable{
+  flex: 1;
+  text-align: center;
+}
+
+#meal{
+  flex: 1;
+  text-align: center;
+  padding-top: 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.services{
+  display: flex;
+}
+#breakfast {
+  background-repeat: no-repeat;
+}
+#lunch{
+  background-image: url('images/lunch.jpg');
+  background-color: rgba(231, 228, 228, 0.79); 
+  background-blend-mode: overlay;                         
+}
+#dinner{
+  background-image: url('images/dinner.jpg');
+}
+
+#foodlist{
+  height: auto;
+  width: auto;
+  padding: 40px;
+  background-color: whitesmoke;
+}
+.foodcontainer{
+  background-image: url('images/foodsBg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 80px;
+  background-color: rgba(160, 156, 156, 0.79); 
+  background-blend-mode: overlay;
+}
+#meal{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  padding: 30px;
+  padding-bottom: 0px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  display: inline;
+}
+#foodlist {
+  color: #F15A29;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-image: url(images/foodsBg.jpg);
+}
+#meal{
+  display:flex;
+  flex-direction: column;
+  overflow: auto;
+  margin: 0;
+}
+
+#tr{
+  text-align: center;
+}
+#meal{
+  margin: 0px;
+  width: 100%;
+  border-collapse: collapse;
+}
+th{
+  background-color: gainsboro;
+  border: 1px solid rgb(206, 203, 203);
+  padding: 10px;
+  height: 50px;
+}
+#meal{
+  color: #F15A29;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+th:hover{
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  color: #F15A29;
+}
+#customers{
+  padding: 50px;  
+  padding-top: 20px;
+  background-color: whitesmoke; 
+  margin-bottom: 2px;
+}
+.rev_abt{
+  height: 200;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px grey;
+  padding: 20px;
+}
+#vertical { 
+  border-left: 1px solid grey;
+  height: 210px; 
+  margin: auto;
+}
+#cst_review, #about{
+  text-align: center; 
+  font-size: 16.5px;
+}
+#cst_review{
+  flex: 3;
+  margin-right: 40px;
+  text-align: center;
+}
+#about{
+  flex: 2;
+  margin-left: 40px;
+}
+#cst_review > h3, #about >h3{
+  color: #F15A29;
+}
+.food_delivery{
+  background-image: url('images/subscribe.jpg');
+  background-size: 100% 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+  color: white;
+  background-repeat: no-repeat;
+  text-align: center;
 
 }
-footer{ margin:5;
-  margin-top: 5;
-  text-align: center;
-  font-family: shadow into light;
+#textbox{
+  background-color: whitesmoke;
+  width: 400px;
+  height:50px ;
+  border: none;
+  margin-top: 5px;
+  border-color: white;
+  margin: 20px;
+  opacity: 0.9;   /*makes inputfield see through*/
 }
-
-.fa-facebook {
-  background: #3B5998;
+:placeholder{
+  color: #F15A29;
+  opacity: 0.5;
+  padding-left: 10px;
+}
+#Subscribe{
+  background-color: #F15A29;
+  width: 200px;
+  height:50px ;
+  border:none;
+  color: whitesmoke;
+}
+.footer{
+  text-align: center;
+  padding-top: 40px; 
+  font-size: 15px;
+  background-color: #F15A29;
   color: white;
 }
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+#copyright{
+  font-size: 15px;
+}
+#alignlogo{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.arrow {
+  border: 1px solid #F15A29;
+  border-width: 0 3px 3px 0;
+  padding: 15px;
+  text-align: center;
+}
+.right {
+  transform: rotate(-45deg);
+  float: right;
+}
+.left {
+  transform: rotate(135deg);
+  float: left;
+}
+.container{
+  align-items: center;
+  display:flex;
+  justify-content: space-between;
+  margin: 5px; 
+}
+#viewgallery{
+  background-color: whitesmoke;
+  width: 200px;
+  height:50px ;
+  color: #F15A29;
+  border: 2px solid #F15A29;
+}
+h1, h2{
+  font-size: 20px;
+}
+@media screen and (max-height: 400px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
 }
