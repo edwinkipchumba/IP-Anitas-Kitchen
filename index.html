@@ -11,20 +11,19 @@
 
 <body>
     <div class="maindiv">
+        <div class="menulogo">
         <div class="nav icon">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="nav icon"></div>
+            <div id="nav icon"></div>
+            <div id="nav icon"></div>
         </div>
-        <div id="logo">
-            <img src="images/logoBig.png" alt="menu logo">
+         <img src="images/logoBig.png" alt="menu logo">
             <p>We Provide the Best Food<br>At the <b>Rigth Price<b></p>
-        </div>
+      </div>
 
-    </div>
         <div class="services">
             <div id="Time">
-                <div class="timetable">
+                <table class="timetable">
                     <tr id="timetable 1">
                         <td>Happy Hour</td>
                     </tr>
@@ -33,9 +32,6 @@
                     </tr>
                     </table>
                 </div>
-
-            </div>
-
                 <div id="breakfast">
                     <p>breakfast</p>
                     <img src="images/cofee cup.jpg" alt="">
@@ -50,17 +46,18 @@
                 </div>
             </div>
 
-            <br>
-            <div class="firstdrinks">
-                <div id="drinks">
-                    <div id="drink image">
+            <div class="food-drinks">
+                <div class="fastfood">
+                <div id="fast-food-image">
+                    <div id="image">
                         <img src="images/drink-1.jpg" alt="food drink">
                         <img src="images/drink-2.jpg" alt=" food drink">
                     </div>
                 </div>
-                <div id="FastFood">
+            
+                <div id="FastFood-text">
                     <h2>Fast Food</h2>
-                    <h3>You'll love our delicious food</h3>
+                    <h4>You'll love our delicious food</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ullam nam perspiciatis velit a,
                         labore ducimus
                         unde nesciunt officiis, soluta accusantium tempora quaerat harum? Mollitia eveniet ducimus
@@ -68,32 +65,31 @@
                         accusamus.</p>
                     <input type="submit" id="gallary" value="VIEW GALLARY &#8594">
                 </div>
-            </div>
-            <div class="second drink2">
-                <div id="drink2">
-                    <div id="image drink">
-                        <img src="images/drinka.jpg" alt="drinks food">
-                        <img src="images/drinkb.jpg" alt=" drinks food">
-                        <h2>Drinks</h2>
-                        <h3>We also produce deliciuos drinks</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti accusamus mollitia
+                </div>
+        
+            <div class="drinks">
+                <div id="drink-text">
+                     <h2>Drinks</h2>
+                     <h3>We also produce deliciuos drinks</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti accusamus mollitia
                             reiciendis error provident,
                             iure laboriosam temporibus veritatis perferendis tenetur dolores quaerat? Quibusdam esse
                             repellat magnam fuga
                             harum dolores totam?</p>
-                        <input type="submit" id="gallery" value="VIEW GALLARY &#8594">
+                            <input type="submit" id="gallary" value="VIEW GALLARY &#8594">
+                         </div>
+                         <div id="drinks-image">
+                        <div id="images">
+                        <img src="images/drinka.jpg" alt="drinks food">
+                        <img src="images/drinkb.jpg" alt=" drinks food">
                     </div>
-                </div>
+            
+                        </div>
+                    </div>
             </div>
-        </div>
-
-
-
-
-
-        <div class="food item">
+        
+        <div class="fooditems">
             <div>
-    
                 <table class="foodtype">
                     <tr>
                         <th id="food">Fast food</th>
@@ -102,12 +98,9 @@
                         <th>Rice</th>
                     </tr>
                 </table>
-            </div>
-        </div>
-        <div class="food container">
-
-            <div id="foodlist">
-                <p><em class="arrow left"></em></p>
+           <div class="foodcontainer">
+             <div class="foodlist">
+                <p><i class="arrow left"></i></p>
                 <div id="meal">
                     <img src="images/chickenBurger.jpg" alt="chicken burger"><p>chicken burger</p>   
                 </div>
@@ -118,30 +111,27 @@
 
                     <img src="images/chickenPizza.jpg" alt="chicken pizza"><p>chicken pizza</p>
                 </div>
-                <p> <em class="arrow rigth"></em></p>
+                <p><i class="arrow right"></i> </p>
             </div>
 
-
+           </div>
+          </div>
         </div>
-    </div>
-    </div>
-    </div>
 
     <div id="customers">
-        <div class="rev_abt">
-            <div id="cst_review">
+        <div class="rev-abt">
+            <div id="customers-review">
                 <h3>Our Happy Customers</h3>
                 <h4>George Richard</h4>
                 <p>Great food! Menu is awesome, there foods are not only great but also in the right price. I'll highly
                     recommend them :)</p>
                 <div class="container">
-                    <p><b> class="arrow left"></b></p>
+                    <p><i class="arrow left"></i></p>
                     <img src="images/p1.png" alt="customer1">
                     <img src="images/p2.png" alt="customer2">
                     <img src="images/p3.png" alt="customer3">
-                    <p><b> class="arrow right"></b></p>
+                    <p><i class="arrow right"></i></p>
                 </div>
-
             </div>
             <div id="vertical"></div>
             <div id="about">
@@ -153,7 +143,7 @@
 
         </div>
     </div>
-    <div class="food_delivery">
+    <div class="food-delivery">
         <h3>Get our daily food items delivered to your email</h3>
         <input type="text" id="textbox" placeholder="Your email">
         <input type="submit" id="Subscribe" value="Subscribe">
@@ -163,14 +153,15 @@
             <h1>MENU</h1>
         </div>
         <p>Thats What We Are</p>
-        <img src="images/facebook.png" alt="f">
-        <img src="images/twitter.png" alt="t">
-        <img src="images/pinterest.png" alt="p">
+        <img src="images/facebook.png" alt="facebook logo">
+        <img src="images/twitter.png" alt="twitter logo">
+        <img src="images/pinterest.png" alt="pinterest logo">
         <p><span id="copyright">2021 Menu </span></p>
 
 
 
     </div>
+</div>
 </body>
 
 </html>

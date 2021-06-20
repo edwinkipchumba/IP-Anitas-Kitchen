@@ -1,5 +1,5 @@
 body{
-  /* background-color: #F15A29; */
+  background-color: #d1bbb4;
   max-width: 1200px;
   max-height: 50%;
   margin: 0 auto;
@@ -12,7 +12,6 @@ body{
   max-width: 100%;
   border-radius: 2px;
   color: black;
-  background-image: url(images/landing.jpg);
 }
 .nav icon{
   margin: 20px;
@@ -23,8 +22,8 @@ body{
   background-color: #fff;
   margin: 2px 0;
 }
-#logo{
-  background-image: url('image/logoBig.jpg');
+.menulogo{
+  background-image: url("./image/logoBig.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -35,37 +34,64 @@ body{
     color: white;
     font-family: sans-serif
 }
-#service{
+.services{
 display: flex;
 flex-direction: row;
 height: 170px;  
 color: white;
 font-style: italic;  
 }
-#timetable{
+.timetable{
   margin: 0px;
     width: 100%;
     height: 100%;
     border-collapse: collapse;
     font-style: normal;
 }
-.timetable1{ color: lightgray;
+tr#timetable1{ color: lightgray;
 color: black;
 }
-.timetable2 {
+#timetable2 {
 background-color: #F15A29;
 }
-#fastfood{
+#time{
+  flex: 1;
+  text-align: center;
+}
+#breakfast, #lunch, #dinner{
+  flex: 1;
+  text-align: center;
+  padding-top: 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#breakfast{
+  background-image: url("./images/breakfast.jpg");
+}
+#lunch{
+  background-image: url("./images/lunch.jpg");
+  background-color: rgba(231, 228, 228, 0.79);
+  background-blend-mode: overlay;
+}
+#dinner{
+  background-image: url("./images/dinner.jpg");
+}
+.food-drinks{
+  height: auto;
+  width: auto;
+  padding: 40px;
+  background-color: whitesmoke;
+}
+.fastfood{
   display: flex;
   background-color: whitesmoke;
 }
-#fastfood image{
+#fast-food-image{
   width: 50%;
   border: 10px solid snow;
   padding: 40px;
   padding-right: 20px;
-  
-} 
+}
 #image{
   width: 50%;
   display: flex;
@@ -73,40 +99,34 @@ background-color: #F15A29;
   border: 5px solid whitesmoke;
   box-shadow: 0px 0px 6px grey;
 }
-#fast food text{
-  width: 50%;
-  padding: 50px;
-  margin-left: 10px;
-  font-size: 14px;  
+#fastfood-text{
+width: 50%;
+padding: 50px;
+margin-left: 10px;
+font-size: 14px;
 }
-#drinks{
+.drinks{
   display: flex;
-  /* background-color: whitesmoke; */
+  background-color: whitesmoke;
 }
-
-.firstdrinks img{
-  display: flex;
-  
-}
-
-#drinks2 image{
+#drinks-image{
   width: 100%;
-  /* border: 2px solid #E5E8E8;
-  box-sizing: border-box; */
+  border: 2px solid #E5E8E8;
+  box-sizing: border-box;
   float: right;
   padding: 20px;
-  padding-right: 50px;   
-}  
-#img{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  border: 10px solid whitesmoke;
-  border-radius: 2px;
-  box-shadow: 0px 0px 6px grey;
-  overflow: hidden;
+  padding-right: 50px;
 }
-#drink2 text{
+#images{
+width: 100%;
+display: flex;
+flex-direction: row;
+border: 10px solid whitesmoke;
+border-radius: 2px;
+box-shadow: 0px 0px 6px grey;
+overflow: hidden;
+}
+#drink-text{
   float: right;
   width: 50%;
   padding: 20px;
@@ -114,61 +134,24 @@ background-color: #F15A29;
   margin-left: 10px;
   padding-right: 20px;
   text-align: right;
-  font-size: 14px; 
-} 
-#timetable{
-  flex: 1;
-  text-align: center;
+  font-size: 14px;
 }
-
-#meal{
-  flex: 1;
-  text-align: center;
-  padding-top: 50px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.services{
-  display: flex;
-}
-#breakfast {
-  background-repeat: no-repeat;
-}
-#lunch{
-  background-image: url('images/lunch.jpg');
-  background-color: rgba(231, 228, 228, 0.79); 
-  background-blend-mode: overlay;                         
-}
-#dinner{
-  background-image: url('images/dinner.jpg');
-}
-
-#foodlist{
-  height: auto;
-  width: auto;
-  padding: 40px;
-  background-color: whitesmoke;
-}
-.foodcontainer{
-  background-image: url('images/foodsBg.jpg');
+.fooditems{
+  background-image: url("./images/foodsBg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
   padding: 80px;
-  background-color: rgba(160, 156, 156, 0.79); 
+  background-color: rgba(160, 156, 156, 0.79);
   background-blend-mode: overlay;
 }
-#meal{
+.foodcontainer{
   background-color: whitesmoke;
   box-sizing: border-box;
-  padding: 30px;
-  padding-bottom: 0px;
+  padding: 10px;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  display: inline;
 }
-#foodlist {
+.foodlist{
   color: #F15A29;
   display: flex;
   flex-direction: row;
@@ -176,21 +159,24 @@ background-color: #F15A29;
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  background-image: url(images/foodsBg.jpg);
 }
 #meal{
-  display:flex;
+  display: flex;
   flex-direction: column;
   overflow: auto;
   margin: 0;
 }
-
+#meal{
+  color: #F15A29;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
 #tr{
   text-align: center;
 }
-#meal{
+.foodtype{
   margin: 0px;
-  width: 100%;
+  width: 100px;
   border-collapse: collapse;
 }
 th{
@@ -199,23 +185,18 @@ th{
   padding: 10px;
   height: 50px;
 }
-#meal{
-  color: #F15A29;
-  background-color: whitesmoke;
-  border: 1px solid whitesmoke;
-}
 th:hover{
-  background-color: whitesmoke;
-  border: 1px solid whitesmoke;
-  color: #F15A29;
+ background-color: whitesmoke;
+ border: 1px solid whitesmoke;
+ color: #F15A29;
 }
 #customers{
-  padding: 50px;  
+  padding: 50px;
   padding-top: 20px;
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
   margin-bottom: 2px;
 }
-.rev_abt{
+.rev-abt{
   height: 200;
   display: flex;
   flex-direction: row;
@@ -224,16 +205,16 @@ th:hover{
   box-shadow: 0px 0px 6px grey;
   padding: 20px;
 }
-#vertical { 
-  border-left: 1px solid grey;
-  height: 210px; 
-  margin: auto;
+#vertical{
+ border-left: 1px solid grey;
+ height: 210px;
+ margin: auto; 
 }
-#cst_review, #about{
-  text-align: center; 
+#customers-reviw, #about{
+  text-align: center;
   font-size: 16.5px;
 }
-#cst_review{
+#customers-review{
   flex: 3;
   margin-right: 40px;
   text-align: center;
@@ -242,11 +223,11 @@ th:hover{
   flex: 2;
   margin-left: 40px;
 }
-#cst_review > h3, #about >h3{
+#customers-review > h3, #about >h3{
   color: #F15A29;
 }
-.food_delivery{
-  background-image: url('images/subscribe.jpg');
+.food-delivery{
+  background-image: url("./images/subscribe.jpg");
   background-size: 100% 100%;
   display: block;
   position: relative;
@@ -255,39 +236,38 @@ th:hover{
   color: white;
   background-repeat: no-repeat;
   text-align: center;
-
 }
 #textbox{
   background-color: whitesmoke;
   width: 400px;
-  height:50px ;
+  height: 50px;
   border: none;
   margin-top: 5px;
   border-color: white;
   margin: 20px;
-  opacity: 0.9;   /*makes inputfield see through*/
+  opacity: 0.9;
 }
 :placeholder{
-  color: #F15A29;
-  opacity: 0.5;
-  padding-left: 10px;
+color: #F15A29;
+opacity: 0.5;
+padding-left: 10px;
 }
-#Subscribe{
+#subscribe{
   background-color: #F15A29;
   width: 200px;
-  height:50px ;
-  border:none;
+  height: 50px;
+  border: none;
   color: whitesmoke;
 }
 .footer{
   text-align: center;
-  padding-top: 40px; 
+  padding-top: 40px;
   font-size: 15px;
   background-color: #F15A29;
   color: white;
 }
 #copyright{
-  font-size: 15px;
+font-size: 15px;
 }
 #alignlogo{
   display: flex;
@@ -295,41 +275,50 @@ th:hover{
   font-size: 15px;
   font-family: sans-serif;
 }
-.arrow {
+.arrow{
   border: 1px solid #F15A29;
   border-width: 0 3px 3px 0;
   padding: 15px;
   text-align: center;
 }
-.right {
+.right{
   transform: rotate(-45deg);
   float: right;
 }
-.left {
+.left{
   transform: rotate(135deg);
   float: left;
 }
 .container{
   align-items: center;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  margin: 5px; 
+  margin: 5px;
 }
-#viewgallery{
+#viewgallary{
   background-color: whitesmoke;
   width: 200px;
-  height:50px ;
+  height: 50px;
   color: #F15A29;
   border: 2px solid #F15A29;
 }
-h1, h2{
+h1,h2{
   font-size: 20px;
 }
-@media screen and (max-height: 400px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+@media screen and (max-height: 400px){
+  .overlay{font-size: 20px;}
+  .overlay .closebtn{
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
-}
+  
+
+
+
+
+
+
+
+ 
